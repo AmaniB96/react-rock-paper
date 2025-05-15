@@ -4,4 +4,51 @@
     width: 400px ;
     height: 100%;
     background-repeat: no-repeat;
+    position: relative;
 }
+
+.hand {
+    position: absolute;
+    top: 140px;
+    left: 5px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 20px hsl(230, 89%, 62%)
+}
+
+.rock {
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 20px hsl(349, 71%, 52%)
+}
+
+.scissor {
+    position: absolute;
+    top: 140px;
+    right: 5px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 20px hsl(39, 89%, 49%)
+}
+
