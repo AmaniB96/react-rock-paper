@@ -2,17 +2,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 30vh;
+    height: 25vh;
     width: 50vw;
     border: 4px solid hsl(217, 16%, 45%);
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
 }
 
 .score {
     background-color: white;
     height: 90%;
-    width: 150px;
+    width: 180px;
     border-radius: 20px;
 }
 

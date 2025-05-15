@@ -9,8 +9,7 @@
 
 .hand {
     position: absolute;
-    top: 140px;
-    left: 5px;
+    top: 110px;
     background-color: white;
     padding: 40px;
     border-radius: 50%;
@@ -39,8 +38,8 @@
 
 .scissor {
     position: absolute;
-    top: 140px;
-    right: 5px;
+    top: 110px;
+    right: 0px;
     background-color: white;
     padding: 40px;
     border-radius: 50%;
