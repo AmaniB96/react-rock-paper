@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './components/header'
 import PreGame from './components/PreGame'
+import Rules from './components/rules'
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <><div className='container'>
       <Header></Header>
       <PreGame></PreGame>
+      <Rules></Rules>
     </div>
     </>
   )

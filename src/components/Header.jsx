@@ -6,7 +6,10 @@ export default function Header() {
         <>
         <div className='header'>
             <img src={Logo} alt="" />
-            <div className='score'><p>Score</p></div>
+            <div className='score'>
+                <p>SCORE</p>
+                <span>0</span>
+            </div>
         </div>
         </>
     )

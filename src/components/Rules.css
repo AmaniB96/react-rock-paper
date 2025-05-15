@@ -1,0 +1,10 @@
+.rules {
+    position: absolute;
+    bottom: 25px;
+    right: 40px;
+    background-color: transparent;
+    color: white;
+    border: hsl(217, 16%, 45%) 3px solid;
+    padding-right: 45px;
+    padding-left: 45px;
+}
