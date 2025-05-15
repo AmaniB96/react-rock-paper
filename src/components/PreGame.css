@@ -1,0 +1,7 @@
+.triangle {
+    background: url('../assets/images/bg-triangle.svg');
+    background-position: center 85%;
+    width: 400px ;
+    height: 100%;
+    background-repeat: no-repeat;
+}
