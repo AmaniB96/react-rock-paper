@@ -7,13 +7,22 @@ import InGame from './components/InGame'
 import HandIcon from './assets/images/icon-paper.svg'
 import Scissor from './assets/images/icon-scissors.svg'
 import Rock from './assets/images/icon-rock.svg'
+import Result from './components/result'
 
 function App() {
 
-
+  const [score, setScore] = useState(0)
   const [state, setState] = useState(false)
   const [playerChoice,SetplayerChoice] = useState(null)
   const [computerChoice,SetcomputerChoice] = useState('')
+  
+  const updateScore = (result) => {
+    if (result === "YOU WON!") {
+      setScore(score + 1)
+    }
+    else if (result === "YOU LOST!")
+      setScore(score -1)
+  }
 
   const NewScreen = (choice)=> {
         setState(true)
@@ -33,8 +42,8 @@ function App() {
   return (
     <>
     <div className='container'>
-      <Header></Header>
-      {state == false ? <PreGame NewScreen={NewScreen}/> : <InGame playerChoice={playerChoice} computerChoice={computerChoice}/>}
+      <Header score={score}></Header>
+      {state == false ? <PreGame NewScreen={NewScreen}/> : <InGame playerChoice={playerChoice} computerChoice={computerChoice} updateScore={updateScore}/>}
       <Rules></Rules>
     </div>
     </>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import './Result.css'
 
-export default function Result({playerChoice, computerChoice}) {
+export default function Result({playerChoice, computerChoice, updateScore}) {
     const [result, setResult] = useState('')
 
     // Move the calculation into useEffect to prevent infinite loops
@@ -9,7 +9,7 @@ export default function Result({playerChoice, computerChoice}) {
         if(computerChoice) {
             // Draw condition
             if (playerChoice.className === computerChoice.className) {
-                setResult("It's a Draw!")
+                setResult("IT'S A DRAW!")
                 return
             }
             
@@ -19,18 +19,21 @@ export default function Result({playerChoice, computerChoice}) {
                 (computerChoice.className === "scissor" && playerChoice.className === "hand") ||
                 (computerChoice.className === "rock" && playerChoice.className === "scissor")
             ) {
-                setResult("You Lost!")
+                setResult("YOU LOST!")
+                updateScore("YOU LOST!")
                 return
             }
             
             // Winning condition (if not draw and not lost, then won)
-            setResult("You Won!")
+            setResult("YOU WON!")
+            updateScore("YOU WON!")
         }
     }, [computerChoice, playerChoice]) // Only run when choices change
 
     return (
         <div className="result">
             <h3>{result}</h3>
+            <button>PLAY AGAIN</button>
         </div>
     )
 }
