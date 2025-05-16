@@ -61,3 +61,41 @@
     font-size: 15pt;
     letter-spacing: 2px;
 }
+
+@media (max-width: 480px) {
+    .game .hand,
+    .game .rock,
+    .game .scissor {
+        padding: 15px;
+        height: 60px;
+        width: 60px;
+        border-width: 10px;
+    }
+
+    .player img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .player p {
+        font-size: 12pt;
+    }
+
+    .game {
+        box-sizing: border-box;
+        width: auto;
+        justify-content: center;
+    }
+
+    .game .result {
+        justify-content: flex-end;
+        margin-bottom: 150px;
+        width: 30%;
+    }
+
+    .game .player {
+        width: 30%;
+    }
+
+
+}

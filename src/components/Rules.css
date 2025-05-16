@@ -43,9 +43,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .rules-image {
     max-width: 100%;
     height: auto;
 }
+
+.close-image {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+

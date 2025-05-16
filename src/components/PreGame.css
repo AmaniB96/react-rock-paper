@@ -52,3 +52,26 @@
     border: solid 20px hsl(39, 89%, 49%)
 }
 
+@media (max-width: 480px) {
+    .triangle {
+        scale: 0.9;
+        height: 40vh;
+        
+    }
+
+    .hand, .rock, .scissor {
+        padding: 15px;
+    }
+
+    .hand {
+        top:80px
+    }
+
+    .scissor {
+        top:80px
+    }
+
+    .rock {
+        left:140px
+    }
+}

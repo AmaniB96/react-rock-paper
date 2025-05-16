@@ -34,3 +34,30 @@
     font-size: 40pt;
     text-align: center;
 }
+
+@media (max-width: 500px) {
+    .header {
+        width: 95%;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 10vh;
+    }
+
+    .header img {
+        scale:0.5;
+    }
+
+    .score {
+        height: 8vh;
+        width: 70px;
+        border-radius: 10px;
+    }
+
+    .score p {
+        font-size: 10px;
+    }
+
+    .score span {
+        font-size: 35px;
+    }
+}

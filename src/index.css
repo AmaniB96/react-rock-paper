@@ -10,12 +10,7 @@
   font-family: "Barlow Semi Condensed", sans-serif;
   line-height: 1.5;
   font-weight: 600;
-  
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;  /* Add this */
 }
 
 a {
@@ -33,7 +28,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: radial-gradient( hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  overflow: hidden;  /* Add this */
 }
 
 h1 {
@@ -65,9 +61,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+  
   a:hover {
     color: #747bff;
   }
+  
   button {
     background-color: #f9f9f9;
   }

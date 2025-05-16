@@ -17,3 +17,10 @@
 .result h3 {
     font-size: 25pt;
 }
+
+@media (max-width: 480px) {
+    .result h3 {
+        font-size: 17pt;
+}
+
+}
