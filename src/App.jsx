@@ -39,11 +39,17 @@ function App() {
     }, 1000)
 }
 
+    const resetGame = () => {
+        setState(false)
+        SetplayerChoice(null)
+        SetcomputerChoice('')
+    }
+
   return (
     <>
     <div className='container'>
       <Header score={score}></Header>
-      {state == false ? <PreGame NewScreen={NewScreen}/> : <InGame playerChoice={playerChoice} computerChoice={computerChoice} updateScore={updateScore}/>}
+      {state == false ? <PreGame NewScreen={NewScreen}/> : <InGame playerChoice={playerChoice} computerChoice={computerChoice} updateScore={updateScore} resetGame={resetGame}/>}
       <Rules></Rules>
     </div>
     </>

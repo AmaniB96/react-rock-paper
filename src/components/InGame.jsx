@@ -1,7 +1,7 @@
 import './InGame.css'
 import Result from './result'
 
-export default function InGame({playerChoice, computerChoice, updateScore}) {
+export default function InGame({playerChoice, computerChoice, updateScore, resetGame}) {
     return (
         <div className='game'>
             <div className='player'>
@@ -10,7 +10,7 @@ export default function InGame({playerChoice, computerChoice, updateScore}) {
                 <img src={playerChoice.image} alt="" />
             </div>
             </div>
-            <Result playerChoice={playerChoice} computerChoice={computerChoice} updateScore={updateScore}/>
+            <Result playerChoice={playerChoice} computerChoice={computerChoice} updateScore={updateScore} resetGame={resetGame}/>
             <div className='player'>
                 <p>THE HOUSE PICKED</p>
                 <div className={computerChoice.className}>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import './Result.css'
 
-export default function Result({playerChoice, computerChoice, updateScore}) {
+export default function Result({playerChoice, computerChoice, updateScore, resetGame}) {
     const [result, setResult] = useState('')
 
     // Move the calculation into useEffect to prevent infinite loops
@@ -33,7 +33,7 @@ export default function Result({playerChoice, computerChoice, updateScore}) {
     return (
         <div className="result">
             <h3>{result}</h3>
-            <button>PLAY AGAIN</button>
+            <button onClick={resetGame}>PLAY AGAIN</button>
         </div>
     )
 }
