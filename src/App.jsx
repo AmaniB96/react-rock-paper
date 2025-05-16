@@ -27,7 +27,7 @@ function App() {
     const randomChoice = choices[Math.floor(Math.random() * 3)]
      setTimeout(() => {
         SetcomputerChoice(randomChoice)
-    }, 2000)
+    }, 1000)
 }
 
   return (
