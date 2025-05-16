@@ -1,8 +1,46 @@
 .game {
+    height: 100%;
+    width: 600px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
-.player {
-    height:100% ;
-    width: 200px;
+/* Reset any absolute positioning from PreGame */
+.game .hand,
+.game .rock,
+.game .scissor {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin: 20px;
+}
+
+/* Common styles for all game pieces */
+.game .hand,
+.game .rock,
+.game .scissor {
+    background-color: white;
+    padding: 40px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Specific borders for each piece */
+.game .hand {
+    border: solid 20px hsl(230, 89%, 62%);
+}
+
+.game .rock {
+    border: solid 20px hsl(349, 71%, 52%);
+}
+
+.game .scissor {
+    border: solid 20px hsl(39, 89%, 49%);
 }

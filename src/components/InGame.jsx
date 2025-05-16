@@ -1,21 +1,20 @@
-import './Header.css'
+import './InGame.css'
 
-import HandIcon from '../assets/images/icon-paper.svg'
-import Scissor from '../assets/images/icon-scissors.svg'
-import Rock from '../assets/images/icon-rock.svg'
 
-export default function InGame({playerChoice}) {
-    console.log(playerChoice);
-    
+export default function InGame({playerChoice, computerChoice}) {
     return (
         <div className='game'>
-            <div className='player'>
-                <p></p>
-                <img src={playerChoice} alt="" />
+            <div>
+                <p>You picked</p>
+                <div className={playerChoice.className}>
+                <img src={playerChoice.image} alt="" />
             </div>
-            <div className='player'>
-                <p></p>
-                <img src={Rock} alt="" />
+            </div>
+            <div>
+                <p>The house picked</p>
+                <div className={computerChoice.className}>
+                <img src={computerChoice.image} alt="" />
+            </div>
             </div>
         </div>
     )
