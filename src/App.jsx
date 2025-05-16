@@ -15,6 +15,7 @@ function App() {
   const [state, setState] = useState(false)
   const [playerChoice,SetplayerChoice] = useState(null)
   const [computerChoice,SetcomputerChoice] = useState('')
+  const[modal,setModal] = useState('modal')
   
   const updateScore = (result) => {
     if (result === "YOU WON!") {
@@ -45,12 +46,20 @@ function App() {
         SetcomputerChoice('')
     }
 
+    const Show = () => {
+        setModal('showModal')
+    }
+
+     const Hide = () => {
+        setModal('modal')
+    }
+
   return (
     <>
     <div className='container'>
       <Header score={score}></Header>
       {state == false ? <PreGame NewScreen={NewScreen}/> : <InGame playerChoice={playerChoice} computerChoice={computerChoice} updateScore={updateScore} resetGame={resetGame}/>}
-      <Rules></Rules>
+      <Rules Show={Show} modal={modal} Hide={Hide}></Rules>
     </div>
     </>
   )
