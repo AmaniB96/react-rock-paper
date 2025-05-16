@@ -58,3 +58,10 @@
     cursor: pointer;
 }
 
+@media (max-width: 480px) {
+    .modal-content {
+        height: 95%;
+        width: 100%;
+}
+
+}

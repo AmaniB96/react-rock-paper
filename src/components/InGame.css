@@ -78,7 +78,7 @@
     }
 
     .player p {
-        font-size: 12pt;
+        font-size: 10pt;
     }
 
     .game {
@@ -89,13 +89,17 @@
 
     .game .result {
         justify-content: flex-end;
-        margin-bottom: 150px;
         width: 30%;
+        height: 50%;
+        margin-top: 100px;
     }
 
     .game .player {
         width: 30%;
     }
-
+    
+    .player {
+        flex-direction: column-reverse;
+    }
 
 }
