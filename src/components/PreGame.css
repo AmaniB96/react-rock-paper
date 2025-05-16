@@ -52,6 +52,24 @@
     border: solid 20px hsl(39, 89%, 49%)
 }
 
+.scissor img {
+    border-radius: 50%;
+    border-top: rgb(188, 186, 186) 3px solid;
+    padding: 10px;
+}
+
+.hand img {
+    border-radius: 50%;
+    border-top: rgb(188, 186, 186) 3px solid;
+    padding: 10px;
+}
+
+.rock img {
+    border-radius: 50%;
+    border-top: rgb(188, 186, 186) 3px solid;
+    padding: 10px;
+}
+
 @media (max-width: 480px) {
     .triangle {
         scale: 0.9;

@@ -78,28 +78,30 @@
     }
 
     .player p {
-        font-size: 10pt;
+        font-size: 9pt;
     }
 
     .game {
         box-sizing: border-box;
         width: auto;
         justify-content: center;
+        padding-bottom: 150px;
     }
 
     .game .result {
         justify-content: flex-end;
-        width: 30%;
+        width: 25%;
         height: 50%;
-        margin-top: 100px;
+        margin-top: 300px;
     }
 
     .game .player {
-        width: 30%;
+        width: 25%;
     }
     
     .player {
         flex-direction: column-reverse;
+        
     }
 
 }
